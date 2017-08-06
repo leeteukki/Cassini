@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		060196021F3733C300D145E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060196011F3733C300D145E7 /* AppDelegate.swift */; };
-		060196041F3733C300D145E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060196031F3733C300D145E7 /* ViewController.swift */; };
 		060196071F3733C300D145E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 060196051F3733C300D145E7 /* Main.storyboard */; };
 		060196091F3733C300D145E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 060196081F3733C300D145E7 /* Assets.xcassets */; };
 		0601960C1F3733C300D145E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0601960A1F3733C300D145E7 /* LaunchScreen.storyboard */; };
 		060196171F3733C300D145E7 /* catiniTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060196161F3733C300D145E7 /* catiniTests.swift */; };
 		060196221F3733C300D145E7 /* catiniUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060196211F3733C300D145E7 /* catiniUITests.swift */; };
+		060196351F37350F00D145E7 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060196341F37350F00D145E7 /* ImageViewController.swift */; };
+		060196371F3741A900D145E7 /* DemoURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060196361F3741A900D145E7 /* DemoURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		060195FE1F3733C300D145E7 /* catini.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = catini.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		060196011F3733C300D145E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		060196031F3733C300D145E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		060196061F3733C300D145E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		060196081F3733C300D145E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0601960B1F3733C300D145E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		0601961D1F3733C300D145E7 /* catiniUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = catiniUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		060196211F3733C300D145E7 /* catiniUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = catiniUITests.swift; sourceTree = "<group>"; };
 		060196231F3733C300D145E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		060196341F37350F00D145E7 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageViewController.swift; path = ../ImageViewController.swift; sourceTree = "<group>"; };
+		060196361F3741A900D145E7 /* DemoURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +99,11 @@
 		060196001F3733C300D145E7 /* catini */ = {
 			isa = PBXGroup;
 			children = (
-				060196011F3733C300D145E7 /* AppDelegate.swift */,
-				060196031F3733C300D145E7 /* ViewController.swift */,
+				060196341F37350F00D145E7 /* ImageViewController.swift */,
 				060196051F3733C300D145E7 /* Main.storyboard */,
-				060196081F3733C300D145E7 /* Assets.xcassets */,
-				0601960A1F3733C300D145E7 /* LaunchScreen.storyboard */,
+				060196361F3741A900D145E7 /* DemoURL.swift */,
 				0601960D1F3733C300D145E7 /* Info.plist */,
+				0601962F1F3733E600D145E7 /* Supporting file */,
 			);
 			path = catini;
 			sourceTree = "<group>";
@@ -123,6 +124,16 @@
 				060196231F3733C300D145E7 /* Info.plist */,
 			);
 			path = catiniUITests;
+			sourceTree = "<group>";
+		};
+		0601962F1F3733E600D145E7 /* Supporting file */ = {
+			isa = PBXGroup;
+			children = (
+				060196011F3733C300D145E7 /* AppDelegate.swift */,
+				060196081F3733C300D145E7 /* Assets.xcassets */,
+				0601960A1F3733C300D145E7 /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting file";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				060196041F3733C300D145E7 /* ViewController.swift in Sources */,
+				060196351F37350F00D145E7 /* ImageViewController.swift in Sources */,
+				060196371F3741A900D145E7 /* DemoURL.swift in Sources */,
 				060196021F3733C300D145E7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
